@@ -1,3 +1,5 @@
 # Ignores
 __pycache__/
 setup.py
+.gitconfig
+.gitignore
