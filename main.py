@@ -16,7 +16,7 @@ def coded():
 	except Exception as e:
 		print("Asegurese de que el archivo se encuentre en la misma carpeta :/")
 		time.sleep(5)
-		raise e
+		sys.exit()
 
 	key = input("Escriba la clave(8 chr min) => ")
 	ciphered_text = get_cipher(key, text)
