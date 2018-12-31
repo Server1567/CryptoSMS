@@ -41,9 +41,15 @@ def get_cipher(key, plain_text):
 # MÉTODO DE DESIFRADO CÉSAR
 
 def decoded():
-	key = input("Escriba la clave => ")
-	f = open("cifrado.txt", "r")
-	ctext = f.read()
+	try:
+		key = input("Escriba la clave => ")
+		f = open("cifrado.txt", "r")
+		ctext = f.read()
+	except FileNotFoundError as e:
+		print("Asegurese de escribir 'cifrado.txt'")
+		time.sleep(5)
+		sys.exit()
+
 	plain_text = ""
 	for index, val in enumerate(ctext):
 		c = ord(val) ^ ord(key[7])
