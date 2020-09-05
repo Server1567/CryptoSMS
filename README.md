@@ -1,4 +1,4 @@
-# CryptoSMS v1.0
+# CryptoSMS v1.1
 
 ## Message Encryptation
 
